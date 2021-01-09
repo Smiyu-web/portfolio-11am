@@ -1,0 +1,16 @@
+{
+  "name": "11amProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/style.scss css/main.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node": "^15.4.0",
+    "node-sass": "^5.0.0"
+  }
+}

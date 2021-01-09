@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+
+@import 'components/buttons';
+
+
+/* ------------------- about us ------------------- */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 4em 4em 4em ;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about_text {
+  padding: 4em;
+  color: white;
+}
+
+.about_photos {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 70%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.about_photo {
+  filter: grayscale(80%);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.5s ease-in-out; 
+
+  &:hover{
+    filter: none;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+
+
+/* ------------------- our designers ------------------- */
+#designers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6em 4em 4em 4em ;
+}
+
+.designers_title {
+  margin: 0 6rem;
+}
+
+.designers_profile {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 2rem;
+}
+
+.profile_content {
+  display: block;
+  width: 29vw;
+  height: 80vh;
+  padding: 1rem;
+}
+
+.content_img {
+  padding: .5rem;
+}
+
+.content_text {
+  margin: 2rem;
+  display: block;
+  position: relative;
+}
+
+.pics_c {
+  height: 25vw;
+  object-fit: cover;
+}
+
+.content_btn img {
+  width: 180px;
+  padding: .8rem 1.6rem;
+  border: .5px solid white;
+
+  &:hover {
+    width: 180px;
+    padding: .8rem 1.6rem;
+    border: .5px solid white;
+    background-color: rgba(255, 255, 255, 0.247);
+  }
+
+}
+
+.profile {
+  margin: .5rem;
+  background-size: cover;
+  background-color:rgba(66, 66, 66, 0.8);
+  background-blend-mode: darken;
+}
+
+.pic0{
+  background-image: url("../../img/ivan.jpg");
+}
+
+.pic1{
+  background-image: url("../../img/inae.png");
+}
+
+.pic2{
+  background-image: url("../../img/ami.jpg");
+}
+
+.pic3{
+  background-image: url("../../img/miyu.jpg");
+}
+
+/* ------------------- our designers ------------------- */
+
+.portfolio_top {
+  margin-bottom: 3rem;
+}
+
+.portfolio_row {
+  display: flex; 
+  justify-content: space-around;
+}
+
+.arrow {
+  font-size: 5rem ;
+  align-self: center;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  &-prev {
+    margin-left: 3%;
+  }
+  
+  &-next {
+    margin-right: 3%;
+  }
+}
+
+.portfolio_card {
+  // transition: var(--transition);
+  background: $clr-grey-10;
+  // box-shadow: var(--light-shadow);
+
+  width: 70vw;
+  display: flex;
+
+  // display: none;
+
+  &:hover {
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.02);
+  }
+}
+
+// .active {
+//   display: flex;
+// }
+
+.portfolio_photo img{
+  // object-fit: cover;
+}
+
+.portfolio_text {
+  color: black;
+  align-self: center;
+  margin: 4rem;
+}
+
+.portfolio_title {
+  margin-bottom: 2rem;
+}
+
+.portfolio_text>h3 {
+  color: #000000;
+  font-size: 2rem;
+}
+
+.portfolio_viewmore{
+  margin-top: 3rem;
+  margin-left: 2rem;
+  width: 50%;
+}
+
+

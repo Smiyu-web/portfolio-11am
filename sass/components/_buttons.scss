@@ -1,0 +1,17 @@
+.btn {
+  text-transform: uppercase;
+  background: $clr-grey-1;
+  color: $clr-white;
+  padding: 1rem 2rem;
+  letter-spacing: $spacing;
+  display: inline-block;
+  transition: $transition;
+  font-size: 1rem;
+  border: 1px solid $clr-grey-10;
+  cursor: pointer;
+
+  &:hover {
+    color: $clr-primary-4;
+    background: $clr-grey-10;
+  }
+}

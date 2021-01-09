@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* darkest grey */
+/* grey used for paragraphs */
+/* ------------------- common ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #000000;
+  color: #f1f5f8;
+  line-height: 1.5;
+  font-size: 0.875rem; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+img {
+  width: 100%;
+  display: block; }
+
+h1, h2, h3, h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 0.7rem; }
+
+h4 {
+  font-size: 0.5rem; }
+
+p {
+  margin-bottom: 1.25rem; }
+
+hr {
+  margin: 1.5rem 0 3rem 0;
+  width: 180px; }
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 1.3rem; }
+  h4 {
+    font-size: 1rem; }
+  body {
+    font-size: 1rem; }
+  h1, h2, h3, h4 {
+    line-height: 1; } }
+
+/* ------------------- header nav ------------------- */
+.nav_bar {
+  width: 100%;
+  padding: 2rem;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  z-index: 100; }
+
+.nav_logo {
+  width: 10rem;
+  margin-left: 5rem; }
+
+.nav_link {
+  display: block;
+  position: relative;
+  padding: 1rem 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  font-size: 1.1rem; }
+  .nav_link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: #dae2ec;
+    transform: scale(0, 1);
+    transition: 0.2s; }
+  .nav_link:hover:before {
+    transform: scale(0.9); }
+
+.main-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  height: 0;
+  /* overflow: hidden; */
+  /* transition: $transition;   */ }
+
+@media (max-width: 480px) {
+  .mobile_menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: pink; } }
+
+/* ------------------- header main ------------------- */
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/main.jpg") center center/cover no-repeat;
+  background-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -4em 0 0 0; }
+
+.main_content {
+  position: relative; }
+
+.main_logo {
+  position: absolute;
+  width: 15rem;
+  top: -110%;
+  left: 12%; }
+
+.btn_full {
+  margin-top: 1em; }
+
+.btn {
+  text-transform: uppercase;
+  background: #000000;
+  color: #fff;
+  padding: 1rem 2rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  transition: all 0.3s linear;
+  font-size: 1rem;
+  border: 1px solid #f1f5f8;
+  cursor: pointer; }
+  .btn:hover {
+    color: #22113A;
+    background: #f1f5f8; }
+
+/* ------------------- about us ------------------- */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 4em 4em 4em; }
+
+.about_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.about_text {
+  padding: 4em;
+  color: white; }
+
+.about_photos {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 70%;
+  overflow: hidden;
+  overflow-y: scroll; }
+
+.about_photo {
+  filter: grayscale(80%);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.5s ease-in-out; }
+  .about_photo:hover {
+    filter: none;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1); }
+
+/* ------------------- our designers ------------------- */
+#designers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6em 4em 4em 4em; }
+
+.designers_title {
+  margin: 0 6rem; }
+
+.designers_profile {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 2rem; }
+
+.profile_content {
+  display: block;
+  width: 29vw;
+  height: 80vh;
+  padding: 1rem; }
+
+.content_img {
+  padding: .5rem; }
+
+.content_text {
+  margin: 2rem;
+  display: block;
+  position: relative; }
+
+.pics_c {
+  height: 25vw;
+  object-fit: cover; }
+
+.content_btn img {
+  width: 180px;
+  padding: .8rem 1.6rem;
+  border: .5px solid white; }
+  .content_btn img:hover {
+    width: 180px;
+    padding: .8rem 1.6rem;
+    border: .5px solid white;
+    background-color: rgba(255, 255, 255, 0.247); }
+
+.profile {
+  margin: .5rem;
+  background-size: cover;
+  background-color: rgba(66, 66, 66, 0.8);
+  background-blend-mode: darken; }
+
+.pic0 {
+  background-image: url("../../img/ivan.jpg"); }
+
+.pic1 {
+  background-image: url("../../img/inae.png"); }
+
+.pic2 {
+  background-image: url("../../img/ami.jpg"); }
+
+.pic3 {
+  background-image: url("../../img/miyu.jpg"); }
+
+/* ------------------- our designers ------------------- */
+.portfolio_top {
+  margin-bottom: 3rem; }
+
+.portfolio_row {
+  display: flex;
+  justify-content: space-around; }
+
+.arrow {
+  font-size: 5rem;
+  align-self: center;
+  cursor: pointer; }
+  .arrow:hover {
+    transform: scale(1.1); }
+  .arrow-prev {
+    margin-left: 3%; }
+  .arrow-next {
+    margin-right: 3%; }
+
+.portfolio_card {
+  background: #f1f5f8;
+  width: 70vw;
+  display: flex; }
+  .portfolio_card:hover {
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.02); }
+
+.portfolio_text {
+  color: black;
+  align-self: center;
+  margin: 4rem; }
+
+.portfolio_title {
+  margin-bottom: 2rem; }
+
+.portfolio_text > h3 {
+  color: #000000;
+  font-size: 2rem; }
+
+.portfolio_viewmore {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  width: 50%; }
